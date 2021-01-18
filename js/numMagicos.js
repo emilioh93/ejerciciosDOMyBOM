@@ -9,12 +9,15 @@ function comenzarJuego() {
                 <input for="numeroUsuario" type="number" class="form-control numeroUsuario" id="numeroUsuario">
                 <div id="numberHelp" class="form-text">El número que ingrese debe estar comprendido en el rango de 1 a 100.</div>
             </div>
-            <button type="button" class="btn btn-dark" onclick="adivinar()">Enviar</button>
+            <button type="button" class="btn btn-dark mb-3" onclick="adivinar()">Enviar</button>
+            <div class="alert alert-danger d-none" role="alert" id="msjAlerta">
+                Prueba de alerta
+            </div>
         </form>
-    </div>`
+        </div>`
         botonComenzar.innerHTML = "Volver";
-    } else if (seccion[0].hasChildNodes() && seccion[0].children.length > 5) {
-        seccion[0].removeChild(seccion[0].children[5]);
+    } else if (seccion[0].hasChildNodes() && seccion[0].children.length > 4) {
+        seccion[0].removeChild(seccion[0].children[4]);
         botonComenzar.innerHTML = "Comenzar juego";
     }
 }
