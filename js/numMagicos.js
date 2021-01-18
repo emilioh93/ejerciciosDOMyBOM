@@ -1,4 +1,5 @@
-// Función para desplegar input al presionar "Comenzar juego"
+let numAleatorio = Math.floor(Math.random() * 100) + 1;
+
 function comenzarJuego() {
     let seccion = document.getElementsByTagName("section");
     if (botonComenzar.innerHTML === "Comenzar juego") {
@@ -19,13 +20,10 @@ function comenzarJuego() {
     } else if (seccion[0].hasChildNodes() && seccion[0].children.length > 4) {
         seccion[0].removeChild(seccion[0].children[4]);
         botonComenzar.innerHTML = "Comenzar juego";
+        numAleatorio = Math.floor(Math.random() * 100) + 1;
     }
 }
 
-// Genero número aleatorio
-let numAleatorio = Math.floor(Math.random() * 100) + 1;
-
-// Función para adivinar el número
 function adivinar() {
     console.log("Desde la función adivinar");
     let numUsuario = Number(numeroUsuario.value);
