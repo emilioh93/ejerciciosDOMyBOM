@@ -11,8 +11,26 @@ function generarNumAleatorio() {
 // 1- Generar el número aleatorio
 // 2- Largar input preguntando al usuario por el número
 
-generarNumAleatorio();
-let numUsuario = parseInt(prompt("¿Cuál es el número? (entre 0 y 99)"));
+function comenzarJuego() {
+    generarNumAleatorio();
+    let seccion = document.getElementsByTagName("section");
+    if (botonComenzar.innerHTML === "Comenzar juego") {
+        seccion[0].innerHTML += `<div class="d-flex justify-content-center mt-5">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Ingrese un número</label>
+                <input type="number" class="form-control" id="InputNumber">
+                <div id="numberHelp" class="form-text">El número que ingrese debe estar comprendido en el rango de 0 a 99.</div>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+    </div>`
+        botonComenzar.innerHTML = "Volver";
+    } else if (seccion[0].hasChildNodes() && seccion[0].children.length > 5) {
+        seccion[0].removeChild(seccion[0].children[5]);
+        botonComenzar.innerHTML = "Comenzar juego";
+    }
+}
 
 // al presionar el botón enviar mostrar en un alert si el usuario adivino o no el número mágico, si no lo adivino indicarle con un alert si el numero que ingreso es mayor o menor al número mágico. Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que adivino el numero.
 
