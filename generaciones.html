@@ -48,17 +48,17 @@
             <form class="w-50">
                 <div class="mb-3">
                     <label for="InputName" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Ingrese su nombre" required>
+                    <input type="text" class="form-control" id="inputNombre" aria-describedby="nameHelp" placeholder="Ingrese su nombre" required>
                 </div>
                 <div class="mb-3">
                     <label for="InputAge" class="form-label">Edad</label>
-                    <input type="number" class="form-control" id="InputAge" aria-describedby="ageHelp" placeholder="Ingrese su edad" required>
+                    <input type="number" class="form-control" id="inputEdad" aria-describedby="ageHelp" placeholder="Ingrese su edad" required>
                 </div>
                 <div class="mb-3">
                     <label for="InputDNI" class="form-label">DNI</label>
-                    <input type="number" class="form-control" id="InputDNI" aria-describedby="dniHelp" placeholder="Ingrese su número de documento" required>
+                    <input type="number" class="form-control" id="inputDNI" aria-describedby="dniHelp" placeholder="Ingrese su número de documento" required>
                 </div>
-                <div class="my-4">
+                <!-- <div class="my-4">
                     <label for="InputGender" class="form-label">Género</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -84,22 +84,22 @@
                       Prefiero no decirlo
                     </label>
                     </div>
-                </div>
+                </div> -->
                 <div class="mb-3">
                     <label for="InputWeight" class="form-label">Peso</label>
-                    <input type="number" class="form-control" id="InputWeight" aria-describedby="weightHelp" placeholder="Ingrese su peso" required>
+                    <input type="number" class="form-control" id="inputPeso" aria-describedby="weightHelp" placeholder="Ingrese su peso" required>
                     <div id="weightHelp" class="form-text">Ingrese la cantidad de kilogramos.</div>
                 </div>
                 <div class="mb-3">
                     <label for="InputHeight" class="form-label">Altura</label>
-                    <input type="number" class="form-control" id="InputHeight" placeholder="Ingrese su altura" required>
+                    <input type="number" class="form-control" id="inputAltura" placeholder="Ingrese su altura" required>
                     <div id="heightHelp" class="form-text">Ingrese la cantidad de centímetros.</div>
                 </div>
                 <div class="mb-3">
                     <label for="InputYear" class="form-label">Año de nacimiento</label>
-                    <input type="number" class="form-control" id="InputYear" placeholder="Ingrese el año de su nacimiento" required>
+                    <input type="number" class="form-control" id="inputAnio" placeholder="Ingrese el año de su nacimiento" required>
                 </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
+                <button type="button" class="btn btn-dark" id="botonEnviar" onclick="crearObjeto()">Enviar</button>
             </form>
         </section>
     </main>
