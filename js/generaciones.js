@@ -87,42 +87,24 @@ function crearObjeto(nombre, edad, dni, peso, altura, anioNacimiento) {
     // }
 }
 
-// let persona1 = new Persona("Emilio Hurtado", 27, 37423538, "H", 74, 175, 1993);
-// let persona2 = new Persona("Leonidas Hurtado", 6, 60888999, "H", 8, 40, 2010);
-// let persona3 = new Persona("María Silvina Bahr", 54, 18037158, "M", 60, 160, 1969);
-// let persona4 = new Persona("Abraham Pereyra", 74, 4037158, "H", 80, 178, 1954);
-// let persona5 = new Persona("Domenico Palmieri", 90, 537158, "H", 90, 180, 1932);
-// persona1.esMayorDeEdad();
-// persona1.mostrarGeneracion();
-// persona1.mostrarDatos();
-// document.write("Generando nuevo DNI aleatorio...<br>")
-// persona1.generaDNI();
-// persona1.mostrarDatos();
-// document.write("<hr>");
-// persona2.esMayorDeEdad();
-// persona2.mostrarGeneracion();
-// persona2.mostrarDatos();
-// document.write("Generando nuevo DNI aleatorio...<br>")
-// persona2.generaDNI();
-// persona2.mostrarDatos();
-// document.write("<hr>");
-// persona3.esMayorDeEdad();
-// persona3.mostrarGeneracion();
-// persona3.mostrarDatos();
-// document.write("Generando nuevo DNI aleatorio...<br>")
-// persona3.generaDNI();
-// persona3.mostrarDatos();
-// document.write("<hr>");
-// persona4.esMayorDeEdad();
-// persona4.mostrarGeneracion();
-// persona4.mostrarDatos();
-// document.write("Generando nuevo DNI aleatorio...<br>")
-// persona4.generaDNI();
-// persona4.mostrarDatos();
-// document.write("<hr>");
-// persona5.esMayorDeEdad();
-// persona5.mostrarGeneracion();
-// persona5.mostrarDatos();
-// document.write("Generando nuevo DNI aleatorio...<br>")
-// persona5.generaDNI();
-// persona5.mostrarDatos();
+function mostrarDatos(nombre, edad, dni, peso, altura, anioNacimiento) {
+    console.log("Desde función mostrarDatos");
+
+    this.nombre = nombre;
+    this.edad = edad;
+    this.dni = dni;
+    // this.sexo = sexo;
+    this.peso = peso;
+    this.altura = altura;
+    this.anioNacimiento = anioNacimiento;
+
+    nombre = document.getElementById("inputNombre").value;
+    edad = document.getElementById("inputEdad").value;
+    dni = document.getElementById("inputDNI").value;
+    peso = document.getElementById("inputPeso").value;
+    altura = document.getElementById("inputAltura").value;
+    anioNacimiento = document.getElementById("inputAnio").value;
+
+    console.log(`Nombre: ${nombre} -- Edad: ${edad} -- DNI: ${dni} -- Peso: ${peso}kg -- Altura: ${altura}cm -- Año de Nacimiento: ${anioNacimiento}`);
+    document.write(`Nombre: ${nombre} -- Edad: ${edad} -- DNI: ${dni} -- Peso: ${peso}kg -- Altura: ${altura}cm -- Año de Nacimiento: ${anioNacimiento}`);
+}

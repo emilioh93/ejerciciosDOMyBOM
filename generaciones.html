@@ -45,20 +45,21 @@
                 en un alert el resultado de la función correspondiente.
             </p>
             <p class="lead">Desarrollo:</p>
-            <form class="w-50">
-                <div class="mb-3">
-                    <label for="InputName" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="inputNombre" aria-describedby="nameHelp" placeholder="Ingrese su nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="InputAge" class="form-label">Edad</label>
-                    <input type="number" class="form-control" id="inputEdad" aria-describedby="ageHelp" placeholder="Ingrese su edad" required>
-                </div>
-                <div class="mb-3">
-                    <label for="InputDNI" class="form-label">DNI</label>
-                    <input type="number" class="form-control" id="inputDNI" aria-describedby="dniHelp" placeholder="Ingrese su número de documento" required>
-                </div>
-                <!-- <div class="my-4">
+            <article class="d-flex justify-content-center">
+                <form class="w-50">
+                    <div class="mb-3">
+                        <label for="InputName" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="inputNombre" aria-describedby="nameHelp" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputAge" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="inputEdad" aria-describedby="ageHelp" placeholder="Ingrese su edad" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputDNI" class="form-label">DNI</label>
+                        <input type="number" class="form-control" id="inputDNI" aria-describedby="dniHelp" placeholder="Ingrese su número de documento" required>
+                    </div>
+                    <!-- <div class="my-4">
                     <label for="InputGender" class="form-label">Género</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -85,22 +86,31 @@
                     </label>
                     </div>
                 </div> -->
-                <div class="mb-3">
-                    <label for="InputWeight" class="form-label">Peso</label>
-                    <input type="number" class="form-control" id="inputPeso" aria-describedby="weightHelp" placeholder="Ingrese su peso" required>
-                    <div id="weightHelp" class="form-text">Ingrese la cantidad de kilogramos.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="InputHeight" class="form-label">Altura</label>
-                    <input type="number" class="form-control" id="inputAltura" placeholder="Ingrese su altura" required>
-                    <div id="heightHelp" class="form-text">Ingrese la cantidad de centímetros.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="InputYear" class="form-label">Año de nacimiento</label>
-                    <input type="number" class="form-control" id="inputAnio" placeholder="Ingrese el año de su nacimiento" required>
-                </div>
-                <button type="button" class="btn btn-dark" id="botonEnviar" onclick="crearObjeto()">Enviar</button>
-            </form>
+                    <div class="mb-3">
+                        <label for="InputWeight" class="form-label">Peso</label>
+                        <input type="number" class="form-control" id="inputPeso" aria-describedby="weightHelp" placeholder="Ingrese su peso" required>
+                        <div id="weightHelp" class="form-text">Ingrese la cantidad de kilogramos.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputHeight" class="form-label">Altura</label>
+                        <input type="number" class="form-control" id="inputAltura" placeholder="Ingrese su altura" required>
+                        <div id="heightHelp" class="form-text">Ingrese la cantidad de centímetros.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputYear" class="form-label">Año de nacimiento</label>
+                        <input type="number" class="form-control" id="inputAnio" placeholder="Ingrese el año de su nacimiento" required>
+                    </div>
+                    <button type="button" class="btn btn-dark w-100" id="botonEnviar" onclick="crearObjeto()">Enviar</button>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-dark" id="botonMostrar" onclick="mostrarDatos()">Mostrar Generación</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-dark" id="botonMostrar" onclick="mostrarDatos()">¿Es mayor de edad?</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
         </section>
     </main>
     <footer class="bg-dark text-light text-center py-5">
