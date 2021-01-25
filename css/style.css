@@ -7,13 +7,16 @@
 .fuenteDigital {
     font-family: 'Orbitron', sans-serif;
     font-size: xx-large;
+    background-color: #8BC6EC;
 }
-
-
-/* Medium devices (tablets, less than 992px) */
 
 @media (max-width: 991.98px) {
     .fuenteDigitalSM {
         font-size: small;
     }
+}
+
+.bg-gradient {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
