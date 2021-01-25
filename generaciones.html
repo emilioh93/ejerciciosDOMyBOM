@@ -45,8 +45,8 @@
                 en un alert el resultado de la función correspondiente.
             </p>
             <p class="lead">Desarrollo:</p>
-            <article class="d-flex justify-content-center">
-                <form class="w-50" id="formulario">
+            <article class="d-flex justify-content-center row">
+                <form class="col-sm-12 col-md-8" id="formulario">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Nombre y Apellido</label>
                         <input type="text" class="form-control" id="inputNombre" aria-describedby="nameHelp" placeholder="Ingrese su nombre">
@@ -102,19 +102,28 @@
                         <input type="number" class="form-control" min="1930" max="2010" id="inputAnio" placeholder="Ingrese el año de su nacimiento">
                     </div>
                     <input type="submit" value="Enviar" class="btn btn-dark w-100">
-                    <div class="row mt-5 text-center ">
-                        <div class="col-6 ">
-                            <button type="button " class="btn btn-dark " id="botonMostrar " onclick="mostrarDatos() ">Mostrar Generación</button>
+                    <!-- <div class="row mt-5 text-center ">
+                        <div class="col-6">
+                            <button type="button " class="btn btn-dark " id="botonMostrarGen " onclick="mostrarGeneracion()">Mostrar Generación</button>
                         </div>
-                        <div class="col-6 ">
-                            <button type="button " class="btn btn-dark " id="botonMostrar " onclick="mostrarDatos() ">¿Es mayor de edad?</button>
-                        </div>
-                    </div>
-                    <div id="alertaPersona">
-
-                    </div>
+                        <!-- <div class="col-6">
+                            <button type="button " class="btn btn-dark" id="mayorMenor" onclick="mayorOMenor()">¿Es mayor de edad?</button>
+                        </div> -->
+                    <!-- </div> -->
                 </form>
+                <div id="listaPersonas" class="col-sm-12 col-md-4"></div>
             </article>
+        </section>
+        <section id="mayorMenor">
+            <button type="button" class="btn btn-primary" onclick="fMayorMenor()">Right</button>
+            <input type="submit" class="btn btn-dark" value="¿Es mayor de edad?">
+            <!-- <input type="submit" value="¿Es mayor de edad?" class="btn btn-dark"> -->
+            <!-- <div id="mayorMenor">
+                <input type="submit" value="¿Es mayor o menor?" class="btn btn-dark">
+            </div> -->
+            <!-- <input type="submit" value="Mostrar Generación" class="btn btn-dark"> -->
+            <div class="alert alert-success" role="alert" id="alerta">
+            </div>
         </section>
     </main>
     <footer class="bg-dark text-light text-center py-5 ">
