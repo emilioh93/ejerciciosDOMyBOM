@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 .listaDeco {
     list-style: none;
     text-decoration: none;
+}
+
+.fuenteDigital {
+    font-family: 'Orbitron', sans-serif;
+    font-size: xx-large;
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .fuenteDigitalSM {
+        font-size: small;
+    }
 }
