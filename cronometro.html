@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Prácticas DOM y BOM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark p-4">
+            <article class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Números Mágicos</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="generaciones.html">Generaciones</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="reloj.html">Reloj</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="cronometro.html">Cronómetro</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="temporizador.html">Temporizador</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </nav>
+    </header>
+    <main>
+        <section class="container my-5">
+            <h1 class="mb-4">Ejercicio 4: Cronómetro</h1>
+            <p><strong>Consigna: </strong> Realizar una web con un cronómetro, que tenga las opciones de iniciar, reset (volver el cronómetro a 0) y pausar.
+            </p>
+            <p class="lead">Desarrollo:</p>
+            <article>
+                <div class="d-flex justify-content-center" id="cronometro"></div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button id="cronometrar" class="btn btn-dark mx-2">Iniciar</button>
+                    <button id="parar" class="btn btn-dark mx-2">Pausar</button>
+                    <button id="reiniciar" class="btn btn-dark mx-2">Reset</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class=" bg-dark text-light text-center py-5 ">
+        <section class="container row no-gutters ">
+            <div class="col-sm-12 col-md-6 ">
+                <p>Ejercicios propuestos por <a href="https://rollingcodeschool.com/ " class="text-light " target="_blank ">RollingCodeSchool &copy;</a></p>
+            </div>
+            <div class="col-sm-12 col-md-6 ">
+                <ul class="listaDeco ">
+                    <li class="text-light "><strong>Alumno:</strong>
+                        <a href="https://emilioh93.github.io/ " target="_blank " class="text-light ">Emilio Ezequiel Hurtado</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="js/cronometro.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+</body>
+
+</html>
