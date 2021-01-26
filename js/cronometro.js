@@ -24,7 +24,7 @@ function cronometrar() {
 
 function escribir() {
     // Creamos el dígito auxiliar, para que números de 1 dígito puedan visualizarse con 2. Ej: 05:06:08
-    var hAux, mAux, sAux;
+    let hAux, mAux, sAux;
     // Incrementamos 1 el valor actual y al llegar a 60, incrementaremos el siguiente valor y reiniciando a 00 el actual
     segundos++;
     if (segundos > 59) {
