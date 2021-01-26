@@ -4,12 +4,11 @@ function iniciar() {
     document.getElementById("comenzarTempo").addEventListener("click", comenzarTempo);
     document.getElementById("parar").addEventListener("click", parar);
     document.getElementById("reiniciar").addEventListener("click", reiniciar);
-
-    minutos = document.getElementById("minutos").value;
-    segundos = document.getElementById("segundos").value;
 }
 
 function comenzarTempo() {
+    minutos = document.getElementById("minutos").value;
+    segundos = document.getElementById("segundos").value;
     document.getElementById("temporizador").innerHTML = "00:00";
     escribir();
     intervalo = setInterval(escribir, 1000);
@@ -17,7 +16,8 @@ function comenzarTempo() {
 }
 
 function escribir() {
-    let mAux, sAux;
+    let mAux,
+        sAux;
     segundos--;
     if (segundos == 0) {
         minutos--;
@@ -28,10 +28,16 @@ function escribir() {
     if (minutos < 10) { mAux = "0" + minutos; } else { mAux = minutos; }
 
     document.getElementById("temporizador").innerHTML = mAux + ":" + sAux;
+
+    if (minutos == -1) {
+        parar();
+        document.getElementById("temporizador").innerHTML = "00:00";
+    }
 }
 
 function parar() {
     clearInterval(intervalo);
+    // FIXME: El problema está acá, porque no sigue desde el número en que quedó, sino que comienza de nuevo
     document.getElementById("comenzarTempo").addEventListener("click", comenzarTempo);
 }
 
